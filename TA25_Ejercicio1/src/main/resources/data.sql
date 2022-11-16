@@ -15,7 +15,7 @@ create table articulos(
 	precio int,
 	codfabricante int,
 	primary key (codigo),
-	foreign key(codfabricante) references fabricantes(codigo) on update cascade on delete cascade
+	foreign key(codfabricante) references fabricantes(codigo) 
 );
 
 insert into fabricantes (nombre)values('Jose');

@@ -25,7 +25,7 @@ public class Articulo {
 	@Column(name = "precio")
 	private int precio;
 	
-	@ManyToOne
+	@ManyToOne()
     @JoinColumn(name = "codfabricante")
     Fabricante fabricantes;
 	

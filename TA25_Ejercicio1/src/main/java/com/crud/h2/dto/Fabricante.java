@@ -27,7 +27,7 @@ public class Fabricante {
 	private String nombre;
 
 	@OneToMany
-    @JoinColumn(name="codigo")
+    @JoinColumn(name="codfabricante")
     private List<Articulo> articulos;
 	
 	public Fabricante() {
@@ -82,7 +82,7 @@ public class Fabricante {
 	
 	
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "articulos")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "fabricantes")
 	public List<Articulo> getArticulos() {
 		return articulos;
 	}
