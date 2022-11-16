@@ -72,7 +72,7 @@ public class ArticulosController {
 	}
 	
 	@DeleteMapping("/articulos/{codigo}")
-	public void eleiminarArticulo(@PathVariable(name="codigo")int id) {
+	public void eliminarArticulo(@PathVariable(name="codigo")int id) {
 		articuloServiceImpl.eliminarArticulo(id);
 	}
 }
